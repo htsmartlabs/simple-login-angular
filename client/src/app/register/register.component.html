@@ -1,0 +1,16 @@
+<form (ngSubmit)="registerUser()">
+  <div class="form-group">
+    <label for="email">Email address</label>
+    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" [(ngModel)]="user.email">
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" id="password" placeholder="Password" name="password" [(ngModel)]="user.password">
+  </div>
+  <div class="form-group">
+    <label for="retypePassword">Retype Password</label>
+    <input type="password" class="form-control" id="retypePassword" placeholder="Retype Password" name="retypePassword" [(ngModel)]="user.retypePassword">
+  </div>
+  <button type="submit" class="btn btn-primary" >{{name}}</button>&nbsp;
+  <button class="btn btn-primary" routerLink='/login'>Login</button>
+</form>

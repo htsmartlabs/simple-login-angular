@@ -1,0 +1,22 @@
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title"> Users in the Database</h4>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Email</th>
+          <th>Operations</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor = 'let user of users'>
+          <td>{{user.email}}</td>
+          <td>
+            <button class="btn btn-danger" (click)="deleteUser(user)">Delete</button>&nbsp;
+            <button class="btn btn-primary" (click)="updateUser(user)">Update</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
