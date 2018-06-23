@@ -10,7 +10,7 @@ export class UserService {
 
   user: User;
   ticket:Token;
-  readonly URL = 'http://localhost:3000/user';
+  readonly URL = 'http://www.createhybrid.com:3000/user';
   private header: HttpHeaders;
 
   constructor(private http:HttpClient) { }
